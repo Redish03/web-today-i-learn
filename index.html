@@ -1,26 +1,33 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="initial-scale=1, width=device-width" />
 
-    <!-- TODO: Open Graph 메타 태그를 설정하세요 -->
-    <!-- <meta property="og:title" content="페이지 제목" /> -->
-    <!-- <meta property="og:description" content="페이지 설명" /> -->
-    <!-- <meta property="og:image" content="./images/thumbnail.jpg" /> -->
+    <!-- Open Graph 메타 태그 -->
+    <meta property="og:title" content="사무엘의 Today I Learned" />
+    <meta
+      property="og:description"
+      content="사무엘의 프로필과 매일 배운 점, 특별한 경험을 기록하는 공간입니다."
+    />
+    <meta
+      property="og:image"
+      content="https://picsum.photos/seed/picsum/800/400"
+    />
 
-    <title>Today I Learn</title>
+    <title>사무엘 | Today I Learn</title>
+
     <link rel="stylesheet" href="./css/main.css" />
-    <script src="./js/index.js" defer></script>
   </head>
   <body>
     <!-- 상단 내비게이션 -->
     <nav class="top-nav">
-      <span class="nav-logo">My Page</span>
+      <span class="nav-logo">사무엘의 TIL</span>
       <ul class="nav-links">
         <li><a href="#about">자기소개</a></li>
         <li><a href="#gallery">갤러리</a></li>
         <li><a href="#works">인생 작품</a></li>
+        <li><a href="#experience">특별한 경험</a></li>
         <li><a href="#til">TIL</a></li>
       </ul>
     </nav>
@@ -29,12 +36,15 @@
     <section class="hero" id="about">
       <div class="profile-card">
         <div class="profile-image">
-          <!-- TODO: 프로필 이미지를 넣어주세요 -->
-          <!-- <img src="./images/profile.jpg" alt="프로필 사진" /> -->
+          <!-- 프로필 이미지 -->
+          <img
+            src="https://picsum.photos/seed/samuel/160/160"
+            alt="사무엘 프로필 사진"
+          />
         </div>
         <div class="profile-info">
-          <h1>닉네임</h1>
-          <p class="tagline">한 줄 소개를 작성해주세요.</p>
+          <h1>사무엘</h1>
+          <p class="tagline">"기술로 사람을 살리는 개발자가 되고싶습니다"</p>
         </div>
       </div>
     </section>
@@ -43,30 +53,41 @@
       <!-- 자기소개 -->
       <section class="content-section">
         <h2>자기소개</h2>
-        <p>자기소개를 작성해주세요.</p>
-        <!-- TODO: 소개 글 안에 블로그, GitHub 등 관련 링크를 <a> 태그로 연결하세요 -->
+        <p>우테코 8기 안드로이드 크루 사무엘입니다!</p>
+        <!-- 관련 링크 -->
+        <div class="links-area">
+          <a href="https://github.com/Redish03" target="_blank"
+            >🔗 GitHub 방문하기</a
+          >
+          <a href="https://blog.naver.com/pluto0303" target="_blank"
+            >✍️ 기술 블로그</a
+          >
+        </div>
       </section>
 
       <!-- 기본 정보 -->
       <section class="content-section" id="info">
         <h2>기본 정보</h2>
-        <!-- TODO: 자신의 기본 정보를 표(<table>)로 정리하세요 -->
+        <!-- 표(<table>)로 정리된 기본 정보 -->
         <table class="info-table">
           <tr>
-            <th>이름</th>
-            <td></td>
+            <th>본명</th>
+            <td>홍성우</td>
           </tr>
           <tr>
             <th>MBTI</th>
-            <td></td>
+            <td>ENFJ (제미나이 피셜 INXP)</td>
           </tr>
           <tr>
             <th>취미</th>
-            <td></td>
+            <td>
+              독서, 농구, 탁구, 요리, 기타 치기, 노래방, 인디 게임, AI와 놀기,
+              노래 듣기
+            </td>
           </tr>
           <tr>
             <th>좋아하는 음식</th>
-            <td></td>
+            <td>김치볶음밥, 국밥, 고기,</td>
           </tr>
         </table>
       </section>
@@ -74,14 +95,18 @@
       <!-- 나만의 갤러리 -->
       <section class="content-section" id="gallery">
         <h2>나만의 갤러리</h2>
-        <p class="section-desc">갤러리 부제를 작성해주세요. (예: 기억에 남는 여행지)</p>
+        <p class="section-desc">일상 속에서 제가 좋아하는 순간들입니다.</p>
         <div class="gallery-grid">
-          <!-- TODO: 9장의 이미지를 배치하세요 -->
-          <!--
-          <img src="./images/gallery-1.jpg" alt="갤러리 이미지 1" />
-          <img src="./images/gallery-2.jpg" alt="갤러리 이미지 2" />
-          ...
-          -->
+          <!-- 9장의 이미지 배치 -->
+          <img src="https://picsum.photos/400/400?random=1" alt="" />
+          <img src="https://picsum.photos/400/400?random=2" alt="" />
+          <img src="https://picsum.photos/400/400?random=3" alt="" />
+          <img src="https://picsum.photos/400/400?random=4" alt="" />
+          <img src="https://picsum.photos/400/400?random=5" alt="" />
+          <img src="https://picsum.photos/400/400?random=6" alt="" />
+          <img src="https://picsum.photos/400/400?random=7" alt="" />
+          <img src="https://picsum.photos/400/400?random=8" alt="" />
+          <img src="https://picsum.photos/400/400?random=9" alt="" />
         </div>
       </section>
 
@@ -89,15 +114,102 @@
       <section class="content-section" id="works">
         <h2>나를 울린 인생 작품</h2>
         <div class="works-list">
-          <!-- TODO: 최소 2가지 작품을 소개하세요 -->
-          <!-- TODO: 작품 중 하나는 <video> 또는 <iframe>으로 영상을 삽입하세요 -->
-          <article class="work-card">
+          <article class="work-card video-card">
             <div class="work-thumbnail">
-              <!-- 작품 이미지 -->
+              <!-- iframe으로 영상 삽입 -->
+              <iframe
+                src="https://www.youtube.com/embed/zSWdZVtXT7E"
+                title="YouTube video player"
+                allowfullscreen
+              ></iframe>
             </div>
             <div class="work-info">
-              <h3>작품 제목</h3>
-              <p>작품에 대한 설명을 작성해주세요.</p>
+              <h3>1. 인생 영화 : 인터스텔라 (Interstellar)</h3>
+              <p>시간과 공간을 넘어서는 인류의 사랑</p>
+            </div>
+          </article>
+
+          <article class="work-card">
+            <div class="work-thumbnail">
+              <!-- 작품 이미지 대용량 랜덤 썸네일 -->
+              <img src="https://picsum.photos/200/300?random=99" alt="" />
+            </div>
+            <div class="work-info">
+              <h3>2. 인생 책 : 클린 코드 (Clean Code)</h3>
+              <p>
+                더 나은 개발자가 되기 위해 어떤 마음가짐으로 코드를 짜야 하는지
+                알려준 바이블 같은 책입니다.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 특별한 경험 섹션 (사진 첨부 기능 포함) -->
+      <section class="content-section" id="experience">
+        <h2>특별한 경험</h2>
+        <p class="section-desc">
+          기억에 남는 잊지 못할 순간들을 사진과 함께 기록해 보세요.
+        </p>
+
+        <form
+          class="til-form"
+          id="exp-form"
+          style="border-top: 4px solid #3498db"
+        >
+          <div class="form-group">
+            <label for="exp-date">날짜</label>
+            <input type="date" id="exp-date" required />
+          </div>
+          <div class="form-group">
+            <label for="exp-title">경험 제목</label>
+            <input
+              type="text"
+              id="exp-title"
+              placeholder="예) 첫 해커톤 참여, 자전거 종주 완주"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="exp-img-files"
+              >사진 첨부 (Shift나 Ctrl을 누르고 여러 장 선택 가능)</label
+            >
+            <input type="file" id="exp-img-files" accept="image/*" multiple />
+          </div>
+          <div class="form-group">
+            <label for="exp-content">내용</label>
+            <textarea
+              id="exp-content"
+              rows="3"
+              placeholder="어떤 특별한 경험이었나요?"
+              required
+            ></textarea>
+          </div>
+          <div class="form-actions">
+            <button type="submit" style="background-color: #3498db">
+              경험 기록하기
+            </button>
+            <button type="reset">초기화</button>
+          </div>
+        </form>
+
+        <div class="til-list" id="exp-list">
+          <!-- 기본 예시 항목 -->
+          <article class="til-item" style="border-left-color: #3498db">
+            <div class="til-actions">
+              <button class="action-btn edit-btn">수정</button>
+              <button class="action-btn delete-btn">삭제</button>
+            </div>
+            <time>2023-08-15</time>
+            <h3 class="til-item-title">첫 국토종주 자전거 길 완주!</h3>
+            <p class="til-item-content">
+              친구들과 함께 며칠간의 여정 끝에 완주했다. 다리는 아팠지만
+              성취감은 최고였다.
+            </p>
+            <div class="exp-images">
+              <img src="https://picsum.photos/300/200?random=20" alt="" />
+              <img src="https://picsum.photos/300/200?random=21" alt="" />
+              <img src="https://picsum.photos/300/200?random=22" alt="" />
             </div>
           </article>
         </div>
@@ -112,15 +224,24 @@
         <form class="til-form" id="til-form">
           <div class="form-group">
             <label for="til-date">날짜</label>
-            <input type="date" id="til-date" name="date" required />
+            <input type="date" id="til-date" required />
           </div>
           <div class="form-group">
-            <label for="til-title">제목</label>
-            <input type="text" id="til-title" name="title" placeholder="학습 주제를 입력하세요" required />
+            <label for="til-title">학습 주제</label>
+            <input
+              type="text"
+              id="til-title"
+              placeholder="학습 주제를 입력하세요"
+              required
+            />
           </div>
           <div class="form-group">
             <label for="til-content">내용</label>
-            <textarea id="til-content" name="content" placeholder="오늘 배운 내용을 정리해주세요" required></textarea>
+            <textarea
+              id="til-content"
+              placeholder="오늘 배운 내용을 정리해주세요"
+              required
+            ></textarea>
           </div>
           <div class="form-actions">
             <button type="submit">등록</button>
@@ -128,21 +249,28 @@
           </div>
         </form>
 
-        <!-- TIL 목록: 폼으로 등록하면 여기에 항목이 추가됩니다 -->
+        <!-- TIL 목록 -->
         <div class="til-list" id="til-list">
-          <!-- 아래는 예시 항목입니다. 자유롭게 수정하거나 삭제하세요 -->
           <article class="til-item">
+            <div class="til-actions">
+              <button class="action-btn edit-btn">수정</button>
+              <button class="action-btn delete-btn">삭제</button>
+            </div>
             <time>2026-03-15</time>
-            <h3>HTML 시멘틱 태그</h3>
-            <p>header, nav, main, section, article, footer 등 시멘틱 태그의 역할과 사용법을 배웠다.</p>
+            <h3 class="til-item-title">HTML 시멘틱 태그</h3>
+            <p class="til-item-content">
+              header, nav, main, section, article, footer 등 시멘틱 태그의
+              역할과 사용법을 배웠다.
+            </p>
           </article>
         </div>
       </section>
-
     </main>
 
     <footer>
-      <p>&copy; My Page</p>
+      <p>&copy; 2026 사무엘(홍성우). All rights reserved.</p>
     </footer>
+
+    <script src="./js/index.js" defer></script>
   </body>
 </html>
