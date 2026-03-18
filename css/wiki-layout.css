@@ -381,7 +381,7 @@ footer {
     text-align: center;
   }
   .nav-links {
-    display: none; /* 모바일에서는 임시 숨김 */
+    display: none;
   }
   .work-card {
     flex-direction: column;
